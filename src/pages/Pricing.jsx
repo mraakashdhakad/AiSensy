@@ -1,4 +1,5 @@
 import React from "react";
+import FAQ from "./FAQ";
 
 export default function PricingPage() {
   return (
@@ -657,6 +658,7 @@ export default function PricingPage() {
 
 
       </div>
+
       {/* Important Pricing Terminologies */}
       <div className="bg-gray-100 py-16 px-4">
 
@@ -764,16 +766,41 @@ export default function PricingPage() {
         </div>
 
       </div>
-      <div className="border border-gray-300 p-12">
-        <div className="float-left">
-          <h1>Ready to get Started?</h1>
-          <p>Create your account for free to try our product.</p>
+
+
+
+      {/* Ready to Get Started Section */}
+      <div className="bg-white border border-gray-300 rounded-lg p-10 flex flex-col md:flex-row items-center justify-between">
+
+        {/* Left Side */}
+        <div>
+
+          <h3 className="text-3xl font-bold">
+            Ready to get Started?
+          </h3>
+
+          <p className="text-gray-500 mt-2">
+            Create your account for free to try our product.
+          </p>
+
         </div>
-        <div className="float-right">
-          <button className="bg-gray-500 text-white px-4 py-2 mx-2 px-6 rounded">Book a Demo</button>
-          <button className="bg-green-500 text-white px-4 py-2 mx-2 px-6 rounded">Talk to Saler</button>
+
+        {/* Right Buttons */}
+        <div className="flex gap-4 mt-6 md:mt-0">
+
+          <button className="border px-6 py-3 rounded-lg hover:bg-gray-100 transition">
+            Book a Demo
+          </button>
+
+          <button className="bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-600 transition">
+            Talk to Sales →
+          </button>
+
         </div>
+
+
       </div>
+      <FAQ />
 
     </div>
   );

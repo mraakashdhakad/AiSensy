@@ -1,22 +1,24 @@
-const Footer = () => {
+import { Link } from "react-router-dom";
+import logo from "../assets/logo.png";const Footer = () => {
   return (
-    <footer className="bg-black text-white py-12 mt-20">
+    <footer className="bg-white border-t border-gray-300 py-12 mt-20">
 
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-8">
 
         <div>
-          <h2 className="text-xl font-bold mb-4">AiSensy</h2>
+          <Link to="/"><img src={logo} className="h-8" /></Link>
           <p className="text-gray-400">
             AI powered WhatsApp marketing platform for businesses.
           </p>
         </div>
 
         <div>
-          <h3 className="font-semibold mb-3">Product</h3>
+          <h3 className="font-semibold mb-3">Plateform</h3>
           <ul className="space-y-2 text-gray-400">
-            <li>Features</li>
-            <li>Pricing</li>
-            <li>Integrations</li>
+             <li><Link to="/product">Product</Link></li>
+            <li><Link to="/features">Features</Link></li>
+            <li><Link to="/pricing">Pricing</Link></li>
+            <li><Link to="/integrations">Integrations</Link></li>
           </ul>
         </div>
 
@@ -26,15 +28,16 @@ const Footer = () => {
             <li>Blog</li>
             <li>Documentation</li>
             <li>Support</li>
+            <li><Link to="/careers">Careers</Link></li>
           </ul>
         </div>
 
         <div>
           <h3 className="font-semibold mb-3">Company</h3>
           <ul className="space-y-2 text-gray-400">
-            <li>About</li>
-            <li>Contact</li>
-            <li>Partners</li>
+            <li><Link to="/about">About</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
+            <li><Link to="/partner">Partners</Link></li>
           </ul>
         </div>
 

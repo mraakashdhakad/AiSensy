@@ -15,6 +15,8 @@ import Resources from "./pages/Resources";
 import Partner from "./pages/Partner";
 import Apk from "./pages/Apk";
 import Signup from "./pages/Signup";
+import About from "./pages/About";
+import Careers from "./pages/Careers";
 
 function App() {
   return (
@@ -34,6 +36,8 @@ function App() {
         <Route path="/partner" element={<Partner />} />
         <Route path="/apk" element={<Apk />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/about" element={<About/>}/>
+        <Route path="/careers" element={<Careers/>}/>
       </Routes>
 
       <Footer />
